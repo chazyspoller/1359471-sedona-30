@@ -51,7 +51,7 @@
                 <span>— №1 —</span>
                 <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <div class="qualities-image">
+              <div class="illustration-image">
                 <img src="img/quality-city.jpg" alt="Городок" width="800" height="256">
               </div>
             </li>
@@ -77,11 +77,11 @@
                 <span>— №2 —</span>
                 <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
               </div>
-              <div class="qualities-image">
+              <div class="illustration-image">
                 <img src="img/quality-bridge.jpg" alt="Мост Дьявола" width="800" height="256">
               </div>
             </li>
-            <li class="qualities-item last-qualities">
+            <li class="qualities-item qualities-city-item ex-qualities">
               <div class="box-item">
                 <h3 class="qualities-heading">небольшая площадь</h3>
                 <span>— №3 —</span>
@@ -104,7 +104,7 @@
           <h2>Поиск гостиницы</h2>
           <p class="search-title">Заинтересовались?</p>
           <p>  Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне  </p>
-          <button class="button button-modal" type="button" name="button">Поиск гостиницы в седоне</button>
+          <button class="button button-brown button-modal" type="button" name="button">Поиск гостиницы в седоне</button>
         </section>
         <section class="search-map">
           <h2>Найти на карте</h2>
@@ -123,19 +123,19 @@
           <h2>Соцсети</h2>
           <ul>
             <li>
-              <a class="social-button" href="#">
+              <a class="button-blue social-button" href="#">
                 <span>Twitter</span>
                 <svg width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.95 1.144c1.685-.496 2.984.27 3.577 1.18.673-.232 1.331-.482 2.011-.709a2.345 2.345 0 01-.857 1.768c.685.17 1.304-.49 1.304-.49-.169 1-1.006 1.787-1.563 2.023-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.12C1.705 9.246.374 8.53.448 6.33c.285.328 1.067.536 1.34.472-.703-.24-1.97-3.36-.894-4.952 1.818 1.854 3.735 3.606 7.152 3.773.208-2.293 1.137-3.83 2.904-4.479z" fill="#fff"/></svg>
               </a>
             </li>
             <li>
-              <a class="social-button" href="#">
+              <a class="button-blue social-button" href="#">
                 <span>Facebook</span>
                 <svg width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff"/></svg>
               </a>
             </li>
             <li>
-              <a class="social-button" href="#">
+              <a class="button-blue social-button" href="#">
                 <span>Youtube</span>
                 <svg width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 0h14c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H3c-1.65 0-3-1.35-3-3V3c0-1.65 1.35-3 3-3zm3.027 4.002v7.996L15.014 8 6.027 4.002z" fill="#fff"/></svg>
               </a>
@@ -160,7 +160,7 @@
         <form class="search-hotel-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="search-hotel-content">
             <label for="date-arrivel-field">Дата заезда:</label>
-            <input type="text" name="date-arrivel" id="date-arrivel-field" value="24 апреля 2017">
+            <input class="input-text" type="text" name="date-arrivel" id="date-arrivel-field" value="24 апреля 2017">
             <button class="button-icons" type="button" name="calendar">
               <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z" fill="#A9A9A9"/>
@@ -170,7 +170,7 @@
           </div>
           <div class="search-hotel-content">
             <label for="dateout-field">Дата выезда:</label>
-            <input type="text" name="dateout" id="dateout-field" value="4 июля 2017">
+            <input class="input-text" type="text" name="dateout" id="dateout-field" value="4 июля 2017">
             <button class="button-icons" type="button" name="calendar">
               <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z" fill="#A9A9A9"/>
@@ -179,34 +179,36 @@
             </button>
           </div>
           <div class="search-hotel-content">
-            <label for="adults-count">Взрослые:</label>
-            <button class="button-icons" type="button" name="minus">
-              <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="12" height="3" fill="#A9A9A9"/>
-              </svg>
-            </button>
-            <input type="text" name="adults" id="adults-count" value="2">
-            <button class="button-icons" type="button" name="plus">
-              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
-              </svg>
-            </button>
+            <div class="search-hotel-adults">
+              <label for="adults-count">Взрослые:</label>
+              <button class="button-icons" type="button" name="minus">
+                <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="12" height="3" fill="#A9A9A9"/>
+                </svg>
+              </button>
+              <input class="counter" type="text" name="adults" id="adults-count" value="2">
+              <button class="button-icons" type="button" name="plus">
+                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
+                </svg>
+              </button>
+            </div>
+            <div class="search-hotel-child">
+              <label for="children-count">Дети:</label>
+              <button class="button-icons" type="button" name="minus">
+                <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="12" height="3" fill="#A9A9A9"/>
+                </svg>
+              </button>
+              <input class="counter" type="text" name="children" id="children-count" value="0">
+              <button class="button-icons" type="button" name="plus">
+                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
+                </svg>
+              </button>
+            </div>
           </div>
-          <div class="search-hotel-content">
-            <label for="children-count">Дети:</label>
-            <button class="button-icons" type="button" name="minus">
-              <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="12" height="3" fill="#A9A9A9"/>
-              </svg>
-            </button>
-            <input type="text" name="children" id="children-count" value="0">
-            <button class="button-icons" type="button" name="plus">
-              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
-              </svg>
-            </button>
-          </div>
-          <button class="button search-button" type="submit" name="button">Найти</button>
+          <button class="button button-blue search-button" type="submit" name="button">Найти</button>
         </form>
       </section>
     </div>
