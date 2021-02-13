@@ -339,6 +339,7 @@ img {
   background-color: var(--basic-brown);
   padding: 30px 10px;
   width: 568px;
+  cursor: pointer;
 }
 /* Brown-color buttons */
 .button-modal:hover, .button-modal:focus,
@@ -535,6 +536,7 @@ img {
   position: absolute;
   top: 7px;
   right: 9px;
+  cursor: pointer;
 }
 
 .search-hotel-form input[type="text"]:hover {
@@ -581,12 +583,14 @@ img {
   position: absolute;
   top: 18px;
   right: 89px;
+  cursor: pointer;
 }
 
 .search-hotel-adults .plus, .search-hotel-children .plus {
   position: absolute;
   top: 14px;
   right: 14px;
+  cursor: pointer;
 }
 
 .counter {
