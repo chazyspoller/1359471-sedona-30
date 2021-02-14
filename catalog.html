@@ -75,15 +75,17 @@
             <fieldset class="price-box">
               <legend class="filter-heading">Стоимость в сутки (Р):</legend>
               <div class="filter-price">
-                <label for="from-price">от</label>
+                <label for="from-price">от
                 <input type="text" name="from-price" id="from-price" value="0">
-                <label for="to-price">до</label>
+                </label>
+                <label for="to-price">до
                 <input type="text" name="to-price" id="to-price" value="3000">
+                </label>
               </div>
-              <div class="slider">
-                <div class="slider-line"></div>
-                <button type="button" name="button"></button>
-                <button type="button" name="button"></button>
+              <div class="range">
+                <div class="range-line" style="width: 80%"></div>
+                <div class="range-controls controls-min" tabindex="0" style="left: 0%"></div>
+                <div class="range-controls controls-max" tabindex="0" style="left: 80%"></div>
               </div>
               <button class="filter-button" type="submit" name="show">Показать</button>
             </fieldset>
@@ -101,10 +103,10 @@
             </ul>
           </div>
           <div class="filter-dirs">
-            <button class="dir dir-up" type="button" name="up">
+            <button class="dir dir-up" type="button" name="up" aria-label="Вверх">
               <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 0L0 10h11L5.5 0z" fill="#CACACA"/></svg>
             </button>
-            <button class="dir dir-down" type="button" name="down">
+            <button class="dir dir-down" type="button" name="down" aria-label="Вниз">
               <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10L0 0h11" fill="#81B3D2"/></svg>
             </button>
           </div>
