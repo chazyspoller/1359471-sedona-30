@@ -40,7 +40,8 @@
   --button-hover-blue: #669ec0;
   --copyright-color: #231f20;
   --copyright-active-color: #bdbbbc;
-  --slider-grey: #ababab;
+  --range-grey: #ababab;
+  --controls-shadow: rgb(171 171 171 / 30%);
 }
 
 /* Global */
@@ -371,7 +372,7 @@ img {
 }
 
 .footer-cover {
-  margin-top: -120px; /*Улучшить*/
+  margin-top: -120px;
 }
 
 /* Contacts */
@@ -384,7 +385,7 @@ img {
   margin: auto;
   padding: 23px 0 36px 0;
 }
-/* Доделать отступ */
+
 .footer-contacts p {
   margin: 0;
   padding: 0;
@@ -673,7 +674,7 @@ img {
 }
 
 .filter-item {
-  margin: 0 0 24px 0;
+  margin: 0 0 23px 0;
 }
 
 .filter-checkbox {
@@ -682,6 +683,7 @@ img {
 
 .filter-item label {
   margin-left: 40px;
+  padding: 1px 0;
   display: block;
   cursor: pointer;
   user-select: none;
@@ -693,6 +695,7 @@ img {
   position: absolute;
   width: 23px;
   height: 23px;
+  top: 0;
   left: -40px;
   background: url("../img/icons/checkbox-off.svg") no-repeat;
 }
@@ -702,6 +705,7 @@ img {
   position: absolute;
   width: 27px;
   height: 23px;
+  top: 0;
   left: -40px;
   background: url("../img/icons/checkbox-on.svg") no-repeat;
 }
@@ -711,6 +715,7 @@ img {
   position: absolute;
   width: 23px;
   height: 23px;
+  top: 0;
   left: -40px;
   background: url("../img/icons/checkbox-off-blocked.svg") no-repeat;
 }
@@ -798,10 +803,10 @@ img {
   outline: none;
   width: 4px;
   height: 4px;
-  background-color: var(--slider-grey);
+  background-color: var(--range-grey);
   border: 8px solid var(--basic-white);
   border-radius: 50%;
-  box-shadow: 0 2px 0 0 rgb(171 171 171 / 30%);
+  box-shadow: 0 2px 0 0 var(--controls-shadow);
   top: -9px;
 }
 
@@ -843,6 +848,7 @@ img {
   color: var(--basic-black);
   padding: 30px 73px 30px 73px;
   display: flex;
+  align-items: center;
 }
 
 /* Find */
@@ -1034,10 +1040,24 @@ img {
   grid-row: 2/3;
 }
 
-.stars{
+.four-stars, .three-stars, .two-stars {
   line-height: 0;
   padding: 0;
   margin: 0;
+  height: 17px;
+  background: url("../img/icons/star.svg") space 100% 0;
+}
+
+.four-stars {
+  width: 84px;
+}
+
+.three-stars {
+  width: 62px;
+}
+
+.two-stars {
+  width: 40px;
 }
 
 .rating {
