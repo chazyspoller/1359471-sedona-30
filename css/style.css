@@ -637,6 +637,7 @@ img {
 /* Filter */
 .filter {
   background: url("../img/background-catalog.jpg") no-repeat;
+  background-size: cover;
 }
 
 .filter-form {
@@ -982,7 +983,6 @@ img {
 
 .catalog-image {
   grid-column: 1/2;
-  align-self: center;
   margin: 0;
   padding: 0;
   width: 135px;
@@ -1051,12 +1051,16 @@ img {
   grid-row: 2/3;
 }
 
-.four-stars, .three-stars, .two-stars {
+.five-stars, .four-stars, .three-stars, .two-stars, .one-stars {
   line-height: 0;
   padding: 0;
   margin: 0;
   height: 17px;
   background: url("../img/icons/star.svg") space 100% 0;
+}
+
+.five-stars {
+  width: 106px;
 }
 
 .four-stars {
@@ -1069,6 +1073,10 @@ img {
 
 .two-stars {
   width: 40px;
+}
+
+.one-stars {
+  width: 18px;
 }
 
 .rating {
