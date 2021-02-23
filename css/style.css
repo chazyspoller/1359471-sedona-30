@@ -23,6 +23,8 @@
   --basic-white: #fff;
   --basic-text-color: #333;
   --backdrop: #f2f2f2;
+  --backdrop-shadow: rgba(0, 1, 1, 0.2);
+  --modal-shadow: rgba(0, 1, 1, 0.15);
   --basic-blue: #81b3d2;
   --basic-lightgrey: #EEE;
   --basic-brown: #766357;
@@ -68,7 +70,7 @@
   padding: 0;
   width: 1200px;
   background-color: var(--basic-white);
-  box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+  box-shadow: 0 5px 15px 0 var(--backdrop-shadow);
 
   min-height: 100%;
   display: grid;
@@ -316,7 +318,6 @@ img {
   line-height: 24px;
   padding: 58px 73px 0 73px;
   margin: 0;
-  position: relative;
 }
 
 .search-title {
@@ -341,11 +342,17 @@ img {
   text-transform: inherit;
   border: none;
   text-align: center;
-  /* vertical-align: middle; */
 }
 /* Button open modal */
+.search-hotel-box {
+  position: relative;
+}
+
 .button-modal {
+  display: block;
+  box-sizing: border-box;
   background-color: var(--basic-brown);
+  margin: 0 auto;
   padding: 30px 10px;
   width: 568px;
   cursor: pointer;
@@ -504,12 +511,28 @@ img {
   background-color: var(--basic-white);
   text-align: center;
   margin: 0;
-  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  box-shadow: 0 7px 15px 0 var(--modal-shadow);
   position: absolute;
   top: 100%;
   left: 50%;
   margin-left: -284px;
-  /* display: none; */
+}
+
+.modal-show {
+  display: block;
+}
+
+.modal-close {
+  display: none;
+}
+
+.modal-slidedown {
+  animation: modal-slidedown 0.4s;
+}
+
+@keyframes modal-slidedown {
+  0% {transform: translateY(-10%);}
+  100% {transform: translateY(0);}
 }
 
 .search-hotel-form{
@@ -1041,6 +1064,8 @@ img {
 }
 
 .button-more {
+  display: block;
+  box-sizing: border-box;
   background-color: var(--basic-blue);
   padding: 3px 17px;
   font-size: inherit;
@@ -1050,6 +1075,8 @@ img {
 }
 
 .button-reserve {
+  display: block;
+  box-sizing: border-box;
   background-color: var(--basic-brown);
   padding: 3px 17px;
   font-size: inherit;
