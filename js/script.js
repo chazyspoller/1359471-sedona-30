@@ -22,7 +22,6 @@ for (let i=0; i<minus.length; i++){
   minus[i].addEventListener('click', function() {
     if(i==0) {
     if (popupAdults.value != 0) {
-      console.log(popupAdults.value);
     popupAdults.value--;
   }}
   else {
