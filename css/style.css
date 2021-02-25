@@ -190,6 +190,7 @@ img {
   width: 1200px;
   height: 509px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -649,10 +650,6 @@ img {
   width: 114px;
 }
 
-/* .search-hotel-counter:first-child .counter {
-  margin-right: 3px;
-} */
-
 .search-button {
   margin: 0;
   padding: 16px 10px;
@@ -888,7 +885,7 @@ img {
   font-size: 12px;
   line-height: 18px;
   color: var(--basic-black);
-  padding: 30px 73px 30px 73px;
+  padding: 29px 73px 29px 73px;
   display: flex;
   align-items: center;
 }
@@ -898,7 +895,8 @@ img {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  margin: 0 46px 0 0;
+  min-width: 130px;
+  margin: 0 33px 0 0;
   padding: 0;
 }
 
@@ -917,6 +915,7 @@ img {
 .breadcrumbs-list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   margin: 0;
   padding: 0;
@@ -949,12 +948,14 @@ img {
 /* Dirs up and down */
 .filter-dirs {
   margin-left: auto;
-  align-self: center;
+  min-width: 34px;
 }
 
 .dir {
   margin: 0;
   padding: 0;
+  display: inline-block;
+  vertical-align: middle;
   background: none;
   border: none;
 }
@@ -1020,8 +1021,7 @@ img {
 }
 
 .results-item-title {
-  margin: -7px 0 7px 0;
-  margin-top: -7px;
+  margin: -7px 0 8px 0;
   padding: 0;
   font-weight: 700;
   font-size: 21px;
@@ -1048,7 +1048,7 @@ img {
   grid-row-gap: 16px;
 }
 
-.hotel-price, .hotel-rang {
+.hotel-details p {
   margin: 0;
   padding: 0;
 }
@@ -1063,6 +1063,16 @@ img {
   grid-row: 1/2;
 }
 
+.button-more-box{
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.button-reserve-box{
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
 .button-more {
   display: block;
   box-sizing: border-box;
@@ -1070,8 +1080,6 @@ img {
   padding: 3px 17px;
   font-size: inherit;
   line-height: inherit;
-  grid-column: 1/2;
-  grid-row: 2/3;
 }
 
 .button-reserve {
@@ -1081,8 +1089,6 @@ img {
   padding: 3px 17px;
   font-size: inherit;
   line-height: inherit;
-  grid-column: 2/3;
-  grid-row: 2/3;
 }
 
 .five-stars, .four-stars, .three-stars, .two-stars, .one-stars {
