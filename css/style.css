@@ -575,7 +575,8 @@ img {
 
 .button-calendar {
   position: absolute;
-  right: 9px;
+  width: 39px;
+  right: 0;
   cursor: pointer;
 }
 
