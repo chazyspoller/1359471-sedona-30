@@ -380,6 +380,12 @@ img {
   color: var(--link-icon-active-white);
 }
 /* Map JS */
+.search-map {
+  background: url("../img/map.png") no-repeat 0 0;
+  height: 594px;
+  width: 100%;
+}
+
 .search-map iframe {
   height: 590px;
   width: 100%;
