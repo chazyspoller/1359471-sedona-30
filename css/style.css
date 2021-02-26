@@ -125,6 +125,7 @@ img {
   margin: 0;
   margin-left: -69px;
   padding: 0;
+  z-index: 10;
 }
 
 .main-header-logo img {
@@ -184,15 +185,24 @@ img {
 /* Title*/
 .title-content {
   background-color: var(--basic-lightgrey);
-  background:
-    url("../img/whiteshape.svg") no-repeat 0 453px,
-    url("../img/background.jpg") no-repeat;
+  background: url("../img/background.jpg") no-repeat;
+  background-size: cover;
   width: 1200px;
-  height: 509px;
+  min-height: 509px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.title-content::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  width: 1200px;
+  height: 57px;
+  background: url("../img/whiteshape.svg") no-repeat;
 }
 
 /* Qualities */
