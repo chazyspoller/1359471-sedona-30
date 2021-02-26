@@ -43,13 +43,16 @@ try {
   isStorageSupport = false;
 }
 
+if (!popup.classList.contains('modal-close')) {
+  popup.classList.add('modal-close');
+}
+
 // Клик по кнопке Поиск гостиниц (закртие/открытие)
 buttonPopupControl.addEventListener('click', function(evt) {
   evt.preventDefault();
-  popup.classList.toggle('modal-show');
   popup.classList.toggle('modal-close');
   popupDateArrivel.focus();
-  if(popup.classList.contains('modal-show')) {
+  if(popup.classList.contains('modal')) {
     popup.classList.add('modal-slidedown');
   } else {
     popup.classList.remove('modal-slidedown');
@@ -66,9 +69,8 @@ buttonPopupControl.addEventListener('click', function(evt) {
 // Нажатие Esc для закрытия формы
 document.addEventListener('keydown', function(evt) {
   if (evt.keyCode === 27) {
-    if (popup.classList.contains('modal-show')) {
+    if (popup.classList.contains('modal')) {
       evt.preventDefault();
-      popup.classList.remove('modal-show');
       popup.classList.add('modal-close');
       }
     }

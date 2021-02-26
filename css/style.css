@@ -522,6 +522,8 @@ img {
 
 /* Modal Search Hotel */
 .modal {
+  display: block;
+  z-index: 10;
   color: var(--basic-black);
   font-size: inherit;
   font-weight: 700;
@@ -533,10 +535,6 @@ img {
   top: 100%;
   left: 50%;
   margin-left: -284px;
-}
-
-.modal-show {
-  display: block;
 }
 
 .modal-close {
