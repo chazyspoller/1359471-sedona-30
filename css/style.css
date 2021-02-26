@@ -184,8 +184,7 @@ img {
 }
 /* Title*/
 .title-content {
-  background-color: var(--basic-lightgrey);
-  background: url("../img/background.jpg") no-repeat;
+  background: var(--basic-lightgrey) url("../img/background.jpg") no-repeat;
   background-size: cover;
   width: 1200px;
   min-height: 509px;
@@ -274,7 +273,7 @@ img {
 }
 
 .illustration-image {
-  background-color: var(--basic-white);
+  background-color: var(--basic-brown);
   line-height: 0;
   margin: 0;
   padding: 0;
