@@ -53,9 +53,9 @@ buttonPopupControl.addEventListener('click', function(evt) {
   popup.classList.toggle('modal-close');
   popupDateArrivel.focus();
   if(popup.classList.contains('modal')) {
-    popup.classList.add('modal-slidedown');
+    popup.classList.add('modal-slide-down');
   } else {
-    popup.classList.remove('modal-slidedown');
+    popup.classList.remove('modal-slide-down');
   }
 
   if (storageAdults) {

@@ -43,7 +43,7 @@
   --copyright-color: #231f20;
   --copyright-active-color: #bdbbbc;
   --range-grey: #ababab;
-  --controls-shadow: rgb(171 171 171 / 30%);
+  --controls-shadow: rgba(171, 171, 171, 0.3);
 }
 
 /* Global */
@@ -522,7 +522,7 @@ img {
 /* Modal Search Hotel */
 .modal {
   display: block;
-  z-index: 10;
+  z-index: 20;
   color: var(--basic-black);
   font-size: inherit;
   font-weight: 700;
@@ -540,11 +540,11 @@ img {
   display: none;
 }
 
-.modal-slidedown {
-  animation: modal-slidedown 0.4s;
+.modal-slide-down {
+  animation: modal-slide-down 0.4s;
 }
 
-@keyframes modal-slidedown {
+@keyframes modal-slide-down {
   0% {transform: translateY(-10%);}
   100% {transform: translateY(0);}
 }
